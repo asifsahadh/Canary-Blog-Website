@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title>
+            Blog Page
+        </title>
+        <!-- Styles, Fonts and Links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+    .navbar-custom {
+        width: 100%; /* ensure the navbar spans the full width */
+    }
+    </style>
+
+    <body>
+        <!-- Navigation Bar -->
+        <style>
+            .navbar-custom { /* to override bootstrap's default navbar color */
+                background-color: #E9EFFF !important;
+                border-bottom: 1px solid black;
+            }
+            .container-fluid { /* making sure that the nav-bar items stay within the container without disturbing the bar */
+                max-width: 750px;
+            }
+        </style>
+        <nav class="navbar-custom navbar navbar-expand-lg bg-body-tertiary" style="font-family: Fira Code;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Canary for VITAP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- ms-auto pushes the links to the right and the logo to the left -->
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Subscribe</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#" style="padding-right: 2px !important;">Join</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navigation Bar -->
+
+        <!-- Image -->
+        <div class="content-container">
+            <style>
+                .img-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .img-fluid {
+                    margin-top: 40px;
+                    border: 1px solid black;
+                    width: 720px;
+                }
+            </style>
+            
+            <div class="img-container">
+                <img src="placeholder.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <!-- Image -->
+        
+        <!-- Content -->
+        <style>
+            .two-column-container {
+                font-family: 'Fira Code';
+                display: flex; 
+                justify-content: space-between; 
+                align-items: center; 
+                width: 750px; 
+                margin-top: 35px;
+            }
+        
+            .column-left {
+                text-align: left; 
+                font-size: 15px;
+            }
+            .outer-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 80vh; /* Ensures centering based on viewport height */
+                font-family: 'Fira Code';
+            }
+
+            .inner-container {
+                max-width: 750px; /* Constrains width of the content */
+                margin: 0 auto;
+                padding: 20px; /* Optional padding for better spacing */
+            }
+
+            .content {
+                text-align: justify;
+            }
+        </style>
+
+        <div class="outer-container">
+            <div class="inner-container">
+                <div class="two-column-container">
+                    <div class="column-left">
+                        <p>March 23, 2024 • 3 min read</p>
+                    </div>
+                    <!-- <div class="column-right">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart" viewBox="0 0 16 16">
+                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                            </svg>
+                        </div>
+                    </div> -->
+                </div>
+
+                <style>
+                    .title {
+                        font-family: Fira Code;
+                    }
+                    .another-container {
+                        font-family: 'Fira Code';
+                        display: flex; 
+                        justify-content: space-between; 
+                        align-items: center; 
+                        width: 724px; 
+                        margin-top: 0px;
+                        text-align: center;
+                    }
+                    .custom-line {
+                        position: relative;
+                        width: 80vw; /* Full width of the viewport */
+                        margin: 0; /* Remove default margins */
+                        border: none; /* Remove default border styles */
+                        border-top: 2px solid #000; /* Add your custom border style */
+                        left: 50%; /* Center align the HR */
+                        transform: translateX(-50%);
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                    }
+                    .content {
+                        font-family: Fira Code;
+                    }
+
+                </style>
+                <div class="another-container">
+                    <h3 class="title">How I cracked the placements at VITAP?</h3>
+                </div>
+
+                <hr class="custom-line">
+
+                <div class="another-container" style="width: 500px; text-align: justify; margin-top: 30px;">
+                    <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum urna a eros viverra, in aliquam nulla auctor. Nulla facilisi. In sed suscipit leo, id feugiat tortor. Aenean sed justo vitae nunc auctor volutpat sit amet non turpis. Morbi fermentum arcu vitae nibh malesuada, id gravida odio varius.<br><br>
+                        Integer hendrerit eros vel ex tincidunt, in efficitur nunc luctus. Cras sit amet leo nec eros pulvinar fringilla. Fusce tempus orci ac metus lacinia accumsan. Nulla facilisi. Fusce nec erat lectus. Donec suscipit purus id tortor dictum, id malesuada sem consectetur.<br><br>
+                        Sed consequat, risus in congue malesuada, est ante finibus metus, ac pretium mauris nisl at quam. Aenean id odio massa. Quisque mollis nisi quam, non efficitur libero scelerisque at. Vivamus vel urna sed justo gravida dictum. Cras gravida mauris eros, ac gravida nisi lacinia sit amet.<br><br>
+                        Ut ac elit ut elit dictum dignissim. Maecenas tempus purus sit amet ipsum consequat, vel vehicula odio vehicula. Etiam nec leo et purus aliquam placerat a ut dolor. Morbi suscipit gravida magna, sed condimentum odio interdum sed. Curabitur vulputate, ex in pretium pharetra, enim turpis semper dui, vitae blandit arcu risus in nibh.<br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum urna a eros viverra, in aliquam nulla auctor. Nulla facilisi. In sed suscipit leo, id feugiat tortor. Aenean sed justo vitae nunc auctor volutpat sit amet non turpis. Morbi fermentum arcu vitae nibh malesuada, id gravida odio varius.<br><br>
+                        Integer hendrerit eros vel ex tincidunt, in efficitur nunc luctus. Cras sit amet leo nec eros pulvinar fringilla. Fusce tempus orci ac metus lacinia accumsan. Nulla facilisi. Fusce nec erat lectus. Donec suscipit purus id tortor dictum, id malesuada sem consectetur.<br><br>
+                        Sed consequat, risus in congue malesuada, est ante finibus metus, ac pretium mauris nisl at quam. avida dictum. Cras gravida mauris eros, ac gravida nisi lacinia sit amet.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+
+        <!-- Footer -->
+        <style>
+            .footer {
+                margin-top: 30px;
+                font-family: 'Fira Code';
+            }
+            .bg-body-tertiary { 
+                border-top: 1px solid black;
+            }
+        </style>
+        <div class="footer">
+            <footer class="bg-body-tertiary text-center" style="background-color: #FFFDF1 !important;">
+              <!-- Grid container -->
+              <div class="container p-4">
+                <!--Grid row-->
+                <div class="row justify-content-center">
+                  <!--Grid column-->
+                  <div class="col-lg-6 col-md-12 mb-4 mb-md-0 position-relative" style="height: 125px;">
+                    <div style="position: absolute; bottom: 0; left: 0; text-align: left; font-size: 15px;">
+                      <h5 class="text-uppercase"></h5>
+                      <p>
+                        <i>Made for VITAP by Sachin, Ganesh & Asif.</i>
+                      </p>
+                    </div>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <style>
+                    .text-body {
+                        text-decoration: none !important;
+                    }
+                  </style>
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-right" style="text-align: right !important; font-size: 15px;">          
+                    <ul class="list-unstyled" style="margin-bottom: 5px !important; margin-top: 10px;">
+                      <li style="margin-bottom: 15px !important;">
+                        <a href="#!" class="text-body">Blogs</a>
+                      </li>
+                      <li style="margin-bottom: 15px !important;">
+                        <a href="#!" class="text-body">Subscribe</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-body">Join</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Grid container -->
+          
+              <!-- Copyright -->
+              <!-- <div class="text-center p-3" style="background-color: #fff9d9; border-top: 1px solid black;">
+                <a class="text-body" style="text-decoration: none;">Canary for VITAP</a>
+              </div> -->
+              <!-- Copyright -->
+            </footer>
+        </div>    
+        <!-- Footer -->  
+    </body>
+</html>
